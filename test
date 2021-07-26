@@ -1,0 +1,68 @@
+
+def pruebaSolucion(row,size):
+    matrixMatrix=[]
+
+    for i in range(size):
+       
+        j=0
+        while j<size:
+            indiceOtro=0
+            matrizResult=[]
+            print(j,"<--j")
+            if row[i]+j<=size:
+                print(indiceOtro)
+                if row[i]+j>row[i]:
+                    for k in range(j):
+                        matrizResult.insert(k,0)
+                    while indiceOtro<row[i]:
+                        matrizResult.append(1)
+                        indiceOtro+=1
+                    newSize=size-j
+                    print(newSize)
+                    while indiceOtro<newSize:
+                        matrizResult.append(0)
+                        indiceOtro+=1
+                else:
+                    while indiceOtro<row[i]:
+                        matrizResult.insert(indiceOtro,1)
+                        indiceOtro+=1
+
+                    while indiceOtro<size:
+                        matrizResult.insert(indiceOtro,0)
+                        indiceOtro+=1
+               
+                matrixMatrix.append(matrizResult)
+               
+            j+=1
+        matrixMatrix.append("-")
+    for k in range(len(matrixMatrix)):
+        print(matrixMatrix[k])
+
+    matricesFinales=[]
+
+    for k in range(len(matrixMatrix)):
+        matrices=[]
+        
+
+
+
+
+            
+
+
+
+    input("enter")
+                        
+
+""" Tengo que intentar alpicar el metodo de detras para delante, de esta forma debo ir
+preguntando uno a uno generando matrices nuevas a partir de lo que tenemos"""
+
+
+#####MAIN
+col = [2,3,4,2,1]
+row = [2,3,3,3,1]
+
+pruebaSolucion(row,5)
+
+
+
